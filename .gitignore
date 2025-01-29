@@ -1,12 +1,1 @@
-@"
-# Ignorar archivos temporales
-*.log
-*.tmp
-.DS_Store
-Thumbs.db
-
-# Ignorar directorios específicos
-node_modules/
-dist/
-build/
-"@ | Out-File -Encoding utf8 .gitignore
+**/node_modules
