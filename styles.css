@@ -1,14 +1,26 @@
 body {
-    margin: 0;
+    height: 200vh;
     font-family: Poppins, sans-serif;
     background-color: #D9D9D9;
+    overflow-y: auto;
   }
   
+  .texto-modulos{
+    font-family:Poppins, sans-serif;
+    margin-left: 20px;
+    margin-top: 13px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
   /*SIDE BAR IZQUIERDA*/
   
   .sidebar {
-    width: 250px;
-    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 1024px;
     background-color: #ffffff;
     padding: 20px;
   }
@@ -20,7 +32,7 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: white;
     color: #9197B3;
     border: none;
     border-radius: 8px;
@@ -31,12 +43,12 @@ body {
   }
 
   .sidebar-button1 {
-    gap: 11px;
+    gap: 13px;
   }
 
   .sidebar-button2 {
     gap: 0px;
-    padding-left: 32px;
+    padding-left: 44px;
   }
   
   .icon {
@@ -136,3 +148,51 @@ body {
   .sidebar-button i {
     margin-right: 10px;
   }
+
+  /*INVENTORY VIEW*/
+
+.inventory-view{
+  margin-top: 250px;
+  margin-left: 250px;
+  width: 955px;
+  height: 80vh;
+  background-color: white;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+table {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 8px;
+  border-collapse: collapse; /* Une los bordes de las celdas */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Línea gris para separar filas */
+tr {
+  border-bottom: 0.5px solid #9197B3; /* Solo separa filas */
+}
+
+/* Quita bordes entre columnas */
+td, th {
+  border: none;
+}
+
+th {
+  background-color: white; /* Fondo gris claro para los encabezados */
+}
+
+.principal-row{
+  font-size: 14px;
+  color: #9197B3;
+}
+
+.other-row{
+  font-size: 14px;
+  font-weight: 600;
+}
